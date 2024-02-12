@@ -14,11 +14,28 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="drinks.html">A Few Drinks</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="basic.html">Basic File</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="advanced.html">Advanced File</a>
+            </li>
+        </ul>
+    </nav>
+
+
     <h3>Have a cup with Sai Vivek Reddy Gankidi</h3>
 
     <div class="container">
         <div class="row">
-            <!-- Letters divs -->
+            
             <div class="col-sm-2">G</div>
             <div class="col-sm-2">A</div>
             <div class="col-sm-2">N</div>
@@ -27,7 +44,7 @@
             <div class="col-sm-2">D</div>
         </div>
         <div class="row">
-                <!-- Divs for drink names -->
+                
                 <div class="col-md">Ginger beer</div>
                 <div class="col-md">Affinity</div>
                 <div class="col-md">Negroni</div>
@@ -44,5 +61,160 @@
         uses a larger width percentage compared to "col-sm-2", making it more susceptible to breaking
         on smaller screen sizes.
     </p>
+
+    <h4>Images</h4>
+    <div class="container">
+        <img src="Ginger beer.jpg" alt="Ginger beer" class="img-fluid" width="200" height="200">
+        <img src="Negroni.jpg" alt="Negroni" class="img-fluid" width="200" height="200">
+        <img src="Irish Coffee.jpg" alt="Irish Coffee" class="img-fluid" width="200" height="200">
+    </div>
+
+    <h4>Thumbnails</h4>
+    <div class="container">
+        <img src="Ginger beer.jpg" alt="Ginger beer" class="img-thumbnail" width="200" height="200">
+        <img src="Negroni.jpg" alt="Negroni" class="img-thumbnail" width="200" height="200">
+        <img src="Irish Coffee.jpg" alt="Irish Coffee" class="img-thumbnail" width="200" height="200">
+    </div>
+    <hr>
+    <div class="container">
+    <table>
+        <caption>Table of Drinks, Stars and Fish</caption>
+        <thead>
+            <tr class="bg-primary text-white">
+                <th scope="col">Letter</th>
+                <th scope="col">Drink</th>
+                <th scope="col">Star Name</th>
+                <th scope="col">Fish</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-info">
+                <th scope="row">G</th>
+                    <td>Ginger beer</td>
+                    <td>Ginan</td>
+                    <td>Galjoen fish</td>
+            </tr>
+
+            <tr class="table-info">
+                <th scope="row">A</th>
+                    <td>Affinity</td>
+                    <td>Andromeda</td>
+                    <td>Arowana</td>
+            </tr>
+
+            <tr class="table-info">
+                <th scope="row">N</th>
+                    <td>Negroni</td>
+                    <td>Nashira</td>
+                    <td>Nandus</td>
+            </tr>
+
+            <tr class="table-info">
+                <th scope="row">K</th>
+                    <td>Kem</td>
+                    <td>Ketoi</td>
+                    <td>Kahawai</td>
+            </tr>
+
+            <tr class="table-info">
+                <th scope="row">I</th>
+                    <td>Irish Coffee</td>
+                    <td>Izar</td>
+                    <td>Ide</td>
+            </tr>
+
+            <tr class="table-info">
+                <th scope="row">D</th>
+                    <td>Dolly</td>
+                    <td>Denebola</td>
+                    <td>Dab</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <hr>
+    <h4>Button</h4>
+    <div class="container">
+        <button type="button" class="btn btn-primary">G</button>
+        <button type="button" class="btn btn-primary">A</button>
+        <button type="button" class="btn btn-primary">N</button>
+        <button type="button" class="btn btn-primary">K</button>
+        <button type="button" class="btn btn-primary">I</button>
+        <button type="button" class="btn btn-primary">D</button>
+    </div>
+
+    <h4>Button Group</h4>
+    <div class="btn-primary">
+        <div class="btn-group" role="Success" aria-label="Success Group">
+            <button type="button" class="btn btn-success">G</button>
+            <button type="button" class="btn btn-success">A</button>
+            <button type="button" class="btn btn-success">N</button>
+        </div>
+        <div class="btn-group" role="alert" aria-label="Alert Group">
+            <button type="button" class="btn btn-warning">K</button>
+            <button type="button" class="btn btn-warning">I</button>
+        </div>
+
+        <div class="btn-group" role="danger" aria-label="Danger Group">
+            <button type="button" class="btn btn-danger">D</button>
+        </div>
+    </div>
+    <hr>
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle"  data-bs-toggle="dropdown">Dropdown button</button>
+        <div class="dropdown-menu">
+        <a class="dropdown-item" href="basic.html">Basic File</a>
+        <a class="dropdown-item" href="advanced.html">Advanced File</a>
+        </div>
+    </div>
+    <hr> 
+
+    <form>
+        <div class="form-group">
+                <label for="inputEmail">Email address</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter your email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="inputDrink">Drink</label>
+            <input type="text" class="form-control" id="inputDrink" placeholder="Enter your drink">
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="newsletterCheckbox">
+            <label class="form-check-label" for="newsletterCheckbox">Sign up for newsletter?</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <hr>
+
+    <div class="card" style="width: 18rem;">
+        <img src="Ginger Beer.jpg" class="card-img-top" alt="Ginger Beer Image">
+        <div class="card-body">
+            <h5 class="card-title">Ginger Beer</h5>
+            <p class="card-text">A refreshing non-alcoholic beverage with the zing of ginger.</p>
+            <a href="https://en.wikipedia.org/wiki/Ginger_beer" class="btn btn-primary">Learn More</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="Negroni.jpg" class="card-img-top" alt="Negroni Image">
+        <div class="card-body">
+            <h5 class="card-title">Negroni</h5>
+            <p class="card-text">A classic cocktail with a perfect balance of gin, vermouth, and Campari.</p>
+            <a href="https://en.wikipedia.org/wiki/Negroni" class="btn btn-primary">Learn More</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="Irish Coffee.jpg" class="card-img-top" alt="Irish Coffee Image">
+        <div class="card-body">
+            <h5 class="card-title">Irish Coffee</h5>
+            <p class="card-text">A warm and comforting blend of coffee, Irish whiskey, and cream.</p>
+            <a href="https://en.wikipedia.org/wiki/Irish_coffee" class="btn btn-primary">Learn More</a>
+        </div>
+    </div>
+
+    </div>
+
 </body>
 </html>
